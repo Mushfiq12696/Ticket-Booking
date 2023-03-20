@@ -92,7 +92,7 @@
                 <hr>
                 <div class="amount ">
                     <div class="left ">
-                        <h4>Total</h4>
+                        <h5>Total</h5>
                     </div>
                     <div class="right ">
                         <p>$<span id="total">0</span></p>
@@ -105,13 +105,13 @@
         <div id="display-conformation" class="conformation-form">
             <h3>Your Order is conformed</h3>
             <br>
-            <h4><span id="city-from">Dhaka</span> to <span id="city-to">NewYork</span>
-            </h4>
-            <h4>
-                <span id="deperture-date">3-22-23</span> to <span id="Return-date">3-28-23</span></h4>
-            <h4>Total-tickets <span id="ticket-info">00</span></h4>
-            <h3>Total Payment:
-                <span id="ticket-price">00</span></h3>
+            <h5><span id="city-from"></span> to <span id="city-to"></span>
+            </h5>
+            <h5>
+                <span id="deperture-date"></span> to <span id="return-date"></span></h5>
+            <h5>Total-tickets <span id="ticket-info"></span></h5>
+            <h3>Total Payment:$
+                <span id="ticket-price"></span></h3>
         </div>
 
         <div class=" booking-content ">
@@ -184,9 +184,9 @@
                 idCall('bookingForm').style.display = 'none';
                 // document.getElementById('display-conformation').style.display = 'block';
                 idCall('display-conformation').style.display = 'block';
-                idCall('city-from').innerText = idCall('flying-from').innerText;
-                idCall('city-to').innerText = idCall('flying-to').innerText;
-                idCall('deperture-date').innerText = idCall('leaving-date').value
+                idCall('city-from').innerText = idCall('flying-from').value;
+                idCall('city-to').innerText = idCall('flying-to').value;
+                idCall('deperture-date').innerText = idCall('leaving-date').value;
                 idCall('return-date').innerText = idCall('coming-date').value;
                 idCall('ticket-info').innerText = getTicketInput('firstTicketId') + getTicketInput('economyTicketId');
                 idCall('ticket-price').innerText = idCall('total').innerText;
